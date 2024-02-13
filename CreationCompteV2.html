@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/bootstrap.css">
+    
+		<link rel="stylesheet" href="/marketplacev2.css">
+    
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Création de compte</title>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="/4.png" alt="Logo de la société AFPA" width="60" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0 justify-content-end">
+                        <li class="nav-item">
+                        <a class="nav-link" href="PageAcceuil.html"><i class="fa-solid fa-house"></i>Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Catégories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Bijoux</a></li>
+                              <li><a class="dropdown-item" href="#">Décoration</a></li>
+                              <li><a class="dropdown-item" href="#">Poterie</a></li>
+                              <li><a class="dropdown-item" href="#">Textile</a></li>
+                              <li><a class="dropdown-item" href="#">Meubles</a></li>
+                              <li><a class="dropdown-item" href="#">Autres</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-white search" type="submit">Search</button>
+                            </form>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageConnexion.html">Login Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageConnexion.html">Login Artisan</a> 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Panier.html"><i class="fa-solid fa-cart-shopping"></i>Panier</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container mt-5">
+        <form class="row g-3" id="form" method="get" action="https://www.google.com">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="choix" id="client" value="client" checked>
+                <label class="form-check-label" for="client">Client</label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="choix" id="artisan" value="artisan">
+                <label class="form-check-label" for="artisan">Artisan</label>
+            </div>
+            <p id="message"></p>
+            <div class="col-md-4">
+                <label for="inputEmail4" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="nom">
+            </div>
+            <div class="col-md-4">
+                <label for="inputPassword4" class="form-label">Prénom</label>
+                <input type="text" class="form-control" id="prenom">
+            </div>
+            <div class="col-4">
+                <label for="inputAddress" class="form-label">Numéro de Téléphone</label>
+                <input type="text" class="form-control" id="tel" placeholder="xx xx xx xx xx">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Adresse email</label>
+                <input type="email" class="form-control" id="mail1">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Confirmez votre email</label>
+                <input type="email" class="form-control" id="mail2">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Mot de passe</label>
+                <input type="password" class="form-control" id="passw1">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Confirmez votre mot de passe</label>
+                <input type="password" class="form-control" id="passw2">
+            </div>
+            <div class="col-6">
+                <label for="inputAddress" class="form-label">Adresse</label>
+                <input type="text" class="form-control" id="inputAddress1" placeholder="Rue, numéro">
+            </div>
+            <div class="col-6">
+                <label for="inputAddress2" class="form-label">Complément d'adresse</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Bat, Res, Chez.">
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Code postal</label>
+                <input type="text" class="form-control" id="codepostal">
+            </div>
+            <div class="col-md-5">
+                <label for="inputCity" class="form-label">Ville</label>
+                <input type="text" class="form-control" id="ville">
+            </div>
+            <div class="col-md-5">
+                <label for="inputState" class="form-label">Pays</label>
+                <select id="pays" class="form-select">
+                <option selected>Choisir</option>
+                <option>...</option>
+                </select>
+            </div>
+            <div class="col-12">
+                <label for="photoprofil" class="ajoutphoto">Ajouter une photo de profil</label>
+                <input type="file" class="form-control-file" id="photoprofil">
+            </div>
+            <div class="col-10">
+                <a class="btn btn-2 col-10 ms-5 mt-2 ps-3" id="soumettre" href="#" role="button">Soumettre</a>
+            </div>
+        </form>
+    </div>
+    
+    <script src="/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="/bootstrap.css">
+		<link rel="stylesheet" href="/marketplacev2.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Page de connexion</title>
+  </head>
+  <body>
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                <img src="/4.png" alt="Logo de la société AFPA" width="60" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0 justify-content-end">
+                        <li class="nav-item">
+                        <a class="nav-link" href="ecf1.html"><i class="fa-solid fa-house"></i>Accueil</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Catégories
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                              <li><a class="dropdown-item" href="#">Bijoux</a></li>
+                              <li><a class="dropdown-item" href="#">Décoration</a></li>
+                              <li><a class="dropdown-item" href="#">Poterie</a></li>
+                              <li><a class="dropdown-item" href="#">Textile</a></li>
+                              <li><a class="dropdown-item" href="#">Meubles</a></li>
+                              <li><a class="dropdown-item" href="#">Autres</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-white search" type="submit">Search</button>
+                            </form>
+                          </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageConnexion.html">Login Client</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="PageConnexion.html">Login Artisan</a>
+                            
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="panier.html"><i class="fa-solid fa-cart-shopping"></i>Panier</a>
+                        
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+      
+        <h1 class="display-6 d-flex justify-content-center">Bonjour, bienvenue sur la page de connexion</h1>
+        <br>
+        <h2 class="d-flex justify-content-center">Veuillez entrer vos identifiants sinon créer un compte</h2>
+        <br>
+        <br>
+      <div class="container mt-5">
+        <form class="row g-3" id="form" method="get" action="">
+            <div class="form-group">
+              <label for="exampleInputEmail1" class="taille">Adresse email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="exemple@gmail.com" required>
+              <small id="emailHelp" class="form-text text-muted">Votre adresse ne sera pas communiqué.</small>
+            </div>
+            <div class="form-group">
+              <label for="motdepasse" class="taille">Mot de passe</label>
+              <input type="password" class="form-control" id="motdepasse" placeholder="Password" required>
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Rester connecté</label>
+              <p class="text-decoration-underline">Mot de passe oublié?</p>
+            </div>
+            <a class="btn btn-2 col-10 ms-5 mt-2 ps-3" href="ModifSuppCompte.html" role="button">Se connecter</a>
+
+            <!-- <button type="submit" class="btn btn-primary">Se connecter</button> -->
+            <br>
+            <br>
+            <p>Vous n'avez pas de compte</p>
+            <!-- <button type="submit" class="btn btn-primary" href="CreationCompte.html">Créer un compte</button> -->
+            <a class="btn btn-2 col-10 ms-5 mt-1 ps-3" href="CreationCompteV2.html" role="button">Créer un compte</a>
+
+        </form>
+      </div>
+        <!-- Footer -->
+    </main>
+    <footer>
+      <div class="text-center p-3 fixed-bottom" style="background-color:  rgba(208, 97, 28, 0.265);">
+         © 2024 Copyright:
+         <a class="text-reset fw-bold" href="">François selmi --- Groupe 2 ---</a>
+      </div>
+       <!-- <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+         <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./assets/images/logo-white.png" class="bi" width="24" height="24"></a></li>
+         <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./assets/images/01  Gradient Glyph/Instagram_Glyph_Gradient.png"  class="bi" width="24" height="24"></a></li>
+         <li class="mx-3"><a class="text-body-secondary" href="#"><img src="./assets/images/icons8-facebook.png"  class="bi" width="30" height="30"></a></li>
+       </ul> -->
+     </footer>
+    <script src="/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
